@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+    </script> -->
+  </head>
+  <body>
+    <!-- <div class="bars-animation">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
+    </div> -->
+    <header>
+      <div class="logo">
+        <a href="#main"><img src="images/m.png" alt="" /></a>
+      </div>
+      <nav>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="main-foto">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="images/me4.jpg" alt="" class="main-foto-img" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-sci">
+        <a href="https://github.com/Maryna-Khrystyianyn"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/marinasvitlana/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/people/Maryna-Khrystyianyn/pfbid0sWom4NEiSokMwP9DHtNpaYeSuyRdpDaYLimnPrHqsUfT9SAedvb4b6MLCVZCwnYil/?sk=photos_by"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <div class="info">
+        <h1>
+          <img src="images/m.png" alt="" class="m-h1" />aryna Khrystyianyn
+        </h1>
+        <h2>
+          I'm
+          <span class="writer">
+            <span id="typed-text"></span>
+          </span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+          assumenda autem atque, sed soluta est culpa officia recusandae
+          reiciendis repellat, veniam eaque maxime, repellendus deleniti porro
+          sint laborum ipsam aperiam?
+        </p>
+      </div>
+      <a class="cv-btn btn" href="files/fake CV.pdf" download>Download CV</a>
+    </main>
+    <section class="skills" id="skills">
+      <h2>🛠️ The Skills</h2>
+      <p>
+        I studied at Taras Shevchenko National University of Kyiv, Faculty of
+        Cybernetics, specializing in Applied Mathematics. My studies took place
+        from 1999 to 2004 in Kyiv, Ukraine. In 2022, I completed a short
+        workshop where I learned the basics of HTML and CSS. Since February 10
+        of this year, I have been studying at DCI, where I continue to learn
+        other technologies related to web development.
+      </p>
+      <div class="skill-card-container">
+        <div class="skill-card">
+          <h3 class="title">HTML & CSS</h3>
+          <img src="images/html-css.png" alt="" class="icon" />
+          <div class="progres-bar">
+            <div class="container">
+              <div class="progres" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="title">Java Sctipt</h3>
+          <img src="images/JavaScript-Logo-300x169.png" alt="" class="icon" />
+          <div class="progres-bar">
+            <div class="container">
+              <div class="progres" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="title">Type Script</h3>
+          <img src="images/ts.png" alt="" class="icon" />
+          <div class="progres-bar">
+            <div class="container">
+              <div class="progres" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="title">SASS SCSS</h3>
+          <img src="images/sass.png" alt="" class="icon" />
+          <div class="progres-bar">
+            <div class="container">
+              <div class="progres" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="project">
+      <h2>Projects</h2>
+      <p>
+        I am just starting my journey as a web developer, but I truly enjoy it.
+        Here are my first projects, which reflect my growing skills and passion
+        for web development. I believe that this is just the beginning — there
+        will be many more projects ahead, and they will become better and better
+        over time.
+      </p>
+      <div class="projects-all">
+        <div class="project-container project1">
+          <a
+            class="project-visibl"
+            href="https://maryna-khrystyianyn.github.io/Todo-List/"
+          >
+            <h3>Todo List</h3>
+            <p class="description">JS training project using localStorage</p>
+          </a>
+        </div>
+
+        <div class="project-container project2">
+          <a
+            class="project-visibl"
+            href="https://maryna-khrystyianyn.github.io/Dark-Thema/"
+          >
+            <h3>DARK THEMA</h3>
+            <p class="description">
+              Buttons und cards. Different effects. DARK THEMA. Paralaks efect -
+              vanilla-tilt.js
+            </p>
+          </a>
+        </div>
+
+        <div class="project-container project3">
+          <div class="project-visibl">
+            <h3>Future</h3>
+            <p class="description">
+              In the future I want to create as many websites as there is water
+              in ocean.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Let's get in touch!</h2>
+      <div class="contact-container">
+        <div>
+          <span class="contact-type"> 📧 :</span>
+          <a
+            class="contact-link"
+            href="mailto:svitlamarin@gmail.com "
+            title="E-mail Marina Khrystyianyn"
+            >svitlamarin@gmail.com</a
+          >
+        </div>
+        <div>
+          <i class="fa-brands fa-telegram contact-link"></i>
+          <a
+            class="contact-link"
+            href="https://telegram.me/svitla_marina"
+            title="Telegram Marina Khrystyianyn"
+          >
+            @svitla_marina
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="javaSctipt/vanilla-tilt.js"></script>
+    <script src="javaSctipt/app.js"></script>
+  </body>
+</html>
