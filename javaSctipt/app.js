@@ -1,22 +1,4 @@
-//     window.scrollTo({top:0, left:0, behavior:'auto'});
 
-// setTimeout(function () {
-//   document.querySelector("header").classList.add("show");
-// }, 1800);
-
-// setTimeout(function () {
-//   document.querySelector("main").classList.add("show");
-// }, 2500);
-
-// setTimeout(function () {
-//   document.querySelectorAll("section").forEach((item) => {
-//     item.classList.add("show");
-//   });
-// }, 2500);
-
-// setTimeout(function () {
-//   document.querySelector("body").style.background = "var(--bg-color-dark)";
-// }, 3000);
 
 // menu
 

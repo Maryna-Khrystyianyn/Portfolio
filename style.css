@@ -29,8 +29,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  /* opacity: 0;
-  transition: opacity 1.5s ease-in; */
   position: fixed;
   top:0;
   width: 100%;
@@ -87,13 +85,10 @@ main {
     "foto sci"
     "info info"
     "download download";
-  /* opacity: 0;
-  transition: opacity 1.5s ease-in; */
+  
 }
 
-/* .show {
-  opacity: 1;
-} */
+
 
 .btn-sci {
   grid-area: sci;
@@ -135,9 +130,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
-.info h2 {
-  /* margin-top: -20px; */
-}
+
 .info p {
   margin: 20px 0;
 }
@@ -223,33 +216,10 @@ h1 {
   color: var(--main-light);
 }
 
-/* animation background */
-/* .bars-animation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  z-index: -1;
-}
 
-.bars-animation .bar {
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color-dark);
-  
-  transform: translateY(-100%);
-  animation: show-bars 1.5s ease-in-out forwards;
-  animation-delay: calc(0.1s * var(--i));
-}
-@keyframes show-bars {
-  100% {
-    transform: translateY(0%);
-  }
-} */
 /* Skills */
 section {
-  /* opacity: 0;
-  transition: opacity 1.5s ease-in; */
+ 
   margin: 20px 0;
   padding: 20px;
   scroll-margin-top:60px ;
@@ -295,7 +265,6 @@ section {
   background-color: var(--light-beg);
   border-radius: 5px;
   border: 1px solid var(--main-light);
-  /* margin-top: 15px; */
   height: 20px;
 }
 .progres {
@@ -413,6 +382,4 @@ grid-template-columns: 1fr 1fr;
 gap:30px
 
 }
-
-
 }
