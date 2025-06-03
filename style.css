@@ -33,9 +33,10 @@ header {
   top:0;
   width: 100%;
   background-color: var(--bg-color-dark);
+  z-index: 100;
 }
 .logo img {
-  width: 27px;
+  width: 30px;
   margin: 10px 20px;
 }
 
@@ -43,33 +44,38 @@ header {
 
 .menu-btn {
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .menu {
   position: absolute;
+  
   top: 38px;
   right: 20px;
-  background: rgba(6, 249, 156, 0.6);
-  width: 100px;
-  padding: 10px;
+  background:var(--bg-color-dark);
+  width: 180px;
+  padding: 10px 30px;
   box-shadow: 0 0 10px var(--main-light);
   border-radius: 10px;
   display: none;
+  opacity: 0.9;
 }
 
 .menu ul {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .menu ul li a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  line-height: 2.5;
+  
 }
 
-.menu ul li:hover {
+/* .menu ul li:hover {
   border-bottom: 2px solid var(--light-beg);
-}
+} */
 
 #scroll{ 
   scroll-margin-top:140px ;
@@ -78,7 +84,7 @@ header {
 /* Setion Main */
 main {
   scroll-margin-top:60px ;
-  margin: 30px 20px;
+  margin: 60px 20px;
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-areas:
@@ -345,17 +351,26 @@ box-shadow: none;
   }
   .menu ul {
     display: flex;
-    gap: 20px
+    gap: 20px;
+    font-size: 1rem;
   }
+  
 
   .menu ul li{
     padding: 5px;
+  }
+
+  .menu ul li a{
+   line-height: 1;
   }
 
   .menu ul li:hover {
     color: var(--main-light);
     border: none;
     box-shadow: 0 0 10px var(--main-light);
+  }
+  main{
+    margin-top: 80px;
   }
 }
 
