@@ -240,13 +240,23 @@ section {
 .skills p {
   margin-bottom: 20px;
 }
+.skill-card-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
 .skill-card {
   background-color: var(--bg-color-dark);
   border-radius: 10px;
   box-shadow: 0 0 10px var(--main-light);
   margin: 10px 0;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
   gap: 10px;
 }
 
@@ -257,6 +267,7 @@ section {
 }
 .icon {
   height: 50px;
+ 
   margin: 10px auto;
 }
 
@@ -424,8 +435,38 @@ section {
     gap: 35px;
   }
   .skill-card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     gap: 30px;
+  }
+}
+
+@media (max-width:1200px) {
+
+  .skill-card-container {
+    
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width:1000px) {
+
+  .skill-card-container {
+    
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width:760px) {
+
+  .skill-card-container {
+    
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:600px) {
+
+  .skill-card-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
